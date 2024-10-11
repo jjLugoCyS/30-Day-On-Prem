@@ -6,11 +6,15 @@ Implement a comprehensive Security Information and Event Management (SIEM) syste
 
 ### Skills Learned
 
-ELK Stack: Proficiency in Elasticsearch, Logstash, and Kibana for data ingestion, processing, and visualization.
+ELK Stack: Elasticsearch, Logstash, and Kibana for data ingestion, processing, and visualization.
 Security Information and Event Management (SIEM): Understanding of SIEM concepts, best practices, and use cases.
 Network and System Administration: Knowledge of network protocols, system configurations, and troubleshooting techniques.
-Security Tools and Technologies: Familiarity with tools like Metasploit, Nmap, and other security assessment tools.
-Scripting and Automation: Experience with scripting languages (e.g., Python, PowerShell) for automating tasks and integrating with the SIEM.
+Security Tools and Technologies: Familiarity with tools like Kali, osTicket, and other security assessment tools.
+Problem-solving: Ability to identify and troubleshoot issues related to SIEM deployments and data analysis.
+Analytical Thinking: Skill in analyzing large datasets to identify security threats and patterns.
+Attention to Detail: Meticulous approach to ensure accurate data collection and analysis.
+Communication: Effective communication skills to collaborate with team members, report findings, and provide recommendations.
+Continuous Learning: A mindset of staying updated with the latest security threats and technologies.
 
 ### Tools Used
 [Bullet Points - Remove this afterwards]
