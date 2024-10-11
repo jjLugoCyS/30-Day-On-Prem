@@ -13,7 +13,6 @@ Security Tools and Technologies: Familiarity with tools like Kali, osTicket, and
 Problem-solving: Ability to identify and troubleshoot issues related to SIEM deployments and data analysis.
 Analytical Thinking: Skill in analyzing large datasets to identify security threats and patterns.
 Attention to Detail: Meticulous approach to ensure accurate data collection and analysis.
-Communication: Effective communication skills to collaborate with team members, report findings, and provide recommendations.
 Continuous Learning: A mindset of staying updated with the latest security threats and technologies.
 
 ### Tools Used
