@@ -1,9 +1,8 @@
 # 30-Day-On-Prem
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+Implement a comprehensive Security Information and Event Management (SIEM) system on-premises. The project will focus on, deploying and configuring an ELK stack (Elasticsearch, Logstash, Kibana) to collect, process, and visualize security-relevant data, setting up a Fleet Server to manage and monitor Elastic Agents deployed on various systems and keep it all centralized, provisioning Windows and Linux server environments for testing and demonstration purposes, integrating a Mythic C2 server to simulate cyberattacks and assess the SIEM's detection capabilities, ans deploying an OSTicket server for incident management and ticketing. The overall goal is to establish a robust SIEM solution capable of detecting, analyzing, and responding to security threats within the organization.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
