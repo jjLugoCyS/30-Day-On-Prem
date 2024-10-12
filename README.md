@@ -20,6 +20,9 @@ Continuous Learning: A mindset of staying updated with the latest security threa
 Elasticsearch: For storing and analyzing large volumes of data.
 Logstash: Collects, processes, and transforms data from various sources.
 Kibana: A powerful visualization tool for exploring and analyzing data stored in Elasticsearch.
+Beats: Lightweight data shippers (e.g., Filebeat, Auditbeat, Metricbeat) to collect data from various sources.
+Threat Intelligence Platforms: Tools to gather and analyze threat intelligence data.
+Configuration Management Tools: To automate the deployment and configuration of the SIEM components.
 
 
 ## Steps
