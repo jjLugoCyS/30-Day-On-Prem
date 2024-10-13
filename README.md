@@ -27,6 +27,6 @@ Configuration Management Tools: To automate the deployment and configuration of 
 
 ## Steps
 
-1. 
+1. In Virtual box get your 6 machines ready. 4 ubuntu Libux m 2 Windows servers.
 
 *Ref 1: Network Diagram*
