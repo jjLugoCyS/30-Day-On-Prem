@@ -76,4 +76,12 @@ Configuration Management Tools: To automate the deployment and configuration of 
 *Ref 18: Custom Windows event logs*<br>
 12. On your Windows Server, Event viewer find Windows Defender > operational, properties, copy "full name" and add another custom Windows event logs like above. Enable RDP on Windows Server under remote desktop settings<br>
 13. Install docker-compose and make on your mythic vm. Install <a href="https://docs.mythic-c2.net/installation">Mythic</a> then run sudo make. > sudo ./mythic-cli start > cat env, and create another port forwarding rule for Mythic, then install a Mythic agent and C2 profile.<br>
-14. 
+14. Make a Mythic payload by going to payloads > Actions > Generate new payload > Windows > Apollo > include all commands > include http: callback remove the s from hhtps and change it to the mythic vms ip address > create pay load > go to payloads and right click download and copy link address.
+![Mythic payload](https://github.com/user-attachments/assets/e6297be7-be64-4034-87a7-abbeebc9950b)<br>
+*Ref 19: Mythic payload*<br>
+![Mythic agent and profile](https://github.com/user-attachments/assets/371b2f2e-a574-4d49-ab0b-9671ef0b3eda)<br>
+*Ref 20: Mythic agent and profile*<br>
+![Mythic active callback](https://github.com/user-attachments/assets/114ebab0-2ff4-48ed-b5c6-09cbe672254b)<br>
+*Ref 21: Mythic active callback*<br>
+15. In the Mythic VM cd into home directory > wget <link address>; change 8443 to 744. and ip to the mythic vm ip nad --no-check-certificate > mv <file> svchost-<make a filename>.exe < python3 -m http.server 9999
+16. 
