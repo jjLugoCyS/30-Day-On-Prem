@@ -27,7 +27,7 @@ Configuration Management Tools: To automate the deployment and configuration of 
 
 ## Steps
 
-1. In Virtual box get your 6 machines ready. 4 ubuntu Libux m 2 Windows servers.
+1. In Virtual box get your 6 machines ready. 4 ubuntu Libux m 2 Windows servers.<br>
 ![VMs](https://github.com/user-attachments/assets/a24c743d-907d-4d7e-b02f-e08b3b694833)<br>
 *Ref 1: VMs*<br>
 2. Set up your NAT network, enter your prefered IPv4 prefic and group your VMs into your newly created NAT network.<br>
