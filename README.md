@@ -66,3 +66,14 @@ Configuration Management Tools: To automate the deployment and configuration of 
 *Ref 14: Windows add agent*<br>
 ![Add Agent success](https://github.com/user-attachments/assets/f65fdb07-289a-42c2-a5be-026e9716dd3c)<br>
 *Ref 15: Add Windows agent success*<br>
+10. Add and Agent for Linux(Ubuntu) Server > create new agent policy > name it > enroll in fleet > create policy > copy Linux Tar and paste into Linux Server.<br>
+![elastic screen](https://github.com/user-attachments/assets/9d84d1dd-1e1d-4594-be5d-4d0fa940a537)<br>
+*Ref 16: Elastic screen*<br>
+![Fleet](https://github.com/user-attachments/assets/fdbd22f3-b0a0-4bbf-b236-4957421d3883)<br>
+*Ref 17: Fleet*<br>
+11. Click the Haburger Icon > Integrations > Search "custom windows event logs" > add custom winds event logs > name it, for channel name go to windows server and open event viewer to find sysmon then operational: right-click, properties, "full name" is the channel name > exisiting host under "where to add", ...; win-policy > save and continue.<br>
+![Custom windows event logs](https://github.com/user-attachments/assets/03598f24-eb91-4029-8187-3dbb992208cf)<br>
+*Ref 18: Custom Windows event logs*<br>
+12. On your Windows Server, Event viewer find Windows Defender > operational, properties, copy "full name" and add another custom Windows event logs like above. Enable RDP on Windows Server under remote desktop settings<br>
+13. Install docker-compose and make on your mythic vm. Install <a href="https://docs.mythic-c2.net/installation">Mythic</a> then run sudo make. > sudo ./mythic-cli start > cat env, and create another port forwarding rule for Mythic, then install a Mythic agent and C2 profile.<br>
+14. 
