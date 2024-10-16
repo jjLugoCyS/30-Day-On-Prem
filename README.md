@@ -90,3 +90,7 @@ Configuration Management Tools: To automate the deployment and configuration of 
 *Ref 22: osTicket download*<br>
 18. Navigate to xampp folder, find properties and edit it to change the Domain name to the VMs ip address, do the same to mysqlhost.
 19. Open xampp control panel and start apache and mysql, click admin nnext to apache > phpMyAdmin > New, to create a new database > name it > create > home > user accounts > click "root" mext to "localhost" > change password > enter password, click go > login information, under host select "use text field", enter the osTicket VM ip address, enter a password > Go.
+20. Navigate to phpMyAdmin folder > make a back of config.inc.php file, open original in notepad > change password of user-root to the one you just created, and add the ip address of the osTicket VM (make sure login hos is your VM ip). Go back to user accounts > root account > databases > select your database under "Add privileges..." > Go > check all > Go.
+ ![config inc](https://github.com/user-attachments/assets/c1a85f1b-c435-46a9-99d0-d7142755f0f5)<br>
+*Ref 23: config.inc*<br>
+21. Navigate to osTicket folder you extracted > copy the "scripts" and "upload" folders and paste into a new folder you create called "osticket" in the htdocs folder under the xampp folder. Access the server/installer in a browser with <VM ip address>/osticket/upload" > continue > go back to the upload folder in htdocs > include > rename ost-sampleconfig.php to ost-config.php > back to broswerm click continue > fill out the form; use the mysql database you created > 
