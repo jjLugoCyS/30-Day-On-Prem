@@ -98,3 +98,13 @@ Configuration Management Tools: To automate the deployment and configuration of 
 *Ref 24: osticket installer*<br>
 ![osticket install form](https://github.com/user-attachments/assets/3b391cd2-5e8d-49e7-8aca-502bcc0d4031)<br>
 *Ref 25: osticket install form*<br>
+22. In osTicket click manage > API > add new API key > "Ip Address" <ELK Server VM ip,>, select "can create tickets", Elastic connector in Internal notes. > add key > Copy API key.<br>
+![osticket login](https://github.com/user-attachments/assets/ba414793-9cc5-4a54-8171-8b52afda1064)<br>
+*Ref 26: osTicket login*<br>
+23. In Elastic click the hamburger icon > Stack Management > Connectores under alerts and insights > Create connector (enable free trial in manage license) > webhook > Name it, URL: http://<-osticket vm ip>/osticket/upload/api/tickets.xml, none under autentication, add http header; key: X-API-Key, value: paste in osticket API key > Save and test > paste in test payload from <s href="https://github.com/osTicket/osTicket/blob/develop/setup/doc/api/tickets.md">osTicket github</a>. > Run. If you get a connection error go to the osTicket VM > Windows Defender firewall > create an inbound rule: New rule > port > enter 80 , 443 > Allow connection > Name: Allow inbound 80, 443. On osTicket click agent panel > testing API to show test content *Add a port forwarding rule to access from host*
+![osTicket ticket generated](https://github.com/user-attachments/assets/bfa7631e-0cc3-416f-bb22-adbda4ec27d2)<br>
+*Ref 27: osTicket generated*<br>
+24. Generating Telemetry is done by attacking your machines with Kali Linux. As an example for the Linux server bruteforce: In Kali cd /usr/share/wordlists > sudo gunzip rockyou.txt.gz > msfconsole > use auxiliary/scanner/ssh/ssh_login > Set rhosts <-target ip address>, set pass_file /usr/share/wordlists/rockyou.txt > set username: root > run. *Use crowbar for RDP*
+![kali scanner](https://github.com/user-attachments/assets/867b3cf9-0f4f-40b3-bff0-403839627245)<br>
+*Ref 28: Kali scanner*<br>
+25. Head over to Elastic webGUI and click on the hamburger icon > Discover: search for the Kali ip address.
